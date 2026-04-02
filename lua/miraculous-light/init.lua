@@ -26,8 +26,9 @@ function M.setup()
   local tikki_red     = "#D32F2F"
   local miraculous_gold = "#B8860B"
   local lucky_charm   = "#D48400"
-  local seine_blue    = "#0277BD"
-  local sky_blue      = "#1565C0"
+  local petal_pink    = "#D81B60"
+  local sakura        = "#E91E63"
+  local info_blue     = "#0277BD"
   local eiffel_grey   = "#6B7280"
   local soft_lilac    = "#7B1FA2"
   local stitch_green  = "#2E7D32"
@@ -43,7 +44,7 @@ function M.setup()
   -- Diagnostic tones
   local error_fg   = ladybug_red
   local warn_fg    = lucky_charm
-  local info_fg    = seine_blue
+  local info_fg    = info_blue
   local hint_fg    = stitch_green
 
   -- Helper ----------------------------------------------------------------
@@ -109,7 +110,7 @@ function M.setup()
   -- 4. Spelling (4 groups)
   ---------------------------------------------------------------------------
   hi("SpellBad",        { sp = ladybug_red, undercurl = true })
-  hi("SpellCap",        { sp = seine_blue, undercurl = true })
+  hi("SpellCap",        { sp = petal_pink, undercurl = true })
   hi("SpellLocal",      { sp = stitch_green, undercurl = true })
   hi("SpellRare",       { sp = soft_lilac, undercurl = true })
 
@@ -120,8 +121,8 @@ function M.setup()
   hi("WarningMsg",      { fg = lucky_charm, bold = true })
   hi("ModeMsg",         { fg = fg, bold = true })
   hi("MoreMsg",         { fg = stitch_green, bold = true })
-  hi("Question",        { fg = seine_blue, bold = true })
-  hi("Directory",       { fg = seine_blue })
+  hi("Question",        { fg = petal_pink, bold = true })
+  hi("Directory",       { fg = petal_pink })
   hi("Title",           { fg = ladybug_red, bold = true })
   hi("DiagnosticError", { fg = error_fg })
   hi("DiagnosticWarn",  { fg = warn_fg })
@@ -164,7 +165,7 @@ function M.setup()
   hi("Boolean",        { fg = tikki_red, bold = true })
   hi("Float",          { fg = lucky_charm })
   hi("Identifier",     { fg = fg })
-  hi("Function",       { fg = seine_blue, bold = true })
+  hi("Function",       { fg = petal_pink, bold = true })
   hi("Statement",      { fg = rose })
   hi("Conditional",    { fg = rose })
   hi("Repeat",         { fg = rose })
@@ -195,7 +196,7 @@ function M.setup()
   hi("Delimiter",      { fg = blush })
   hi("SpecialComment", { fg = light_pink, italic = true })
   hi("Debug",          { fg = tikki_red })
-  hi("Underlined",     { fg = seine_blue, underline = true })
+  hi("Underlined",     { fg = petal_pink, underline = true })
 
   ---------------------------------------------------------------------------
   -- 12. Misc UI (4 groups)
@@ -215,8 +216,8 @@ function M.setup()
   hi("@text.strike",            { fg = fg, strikethrough = true })
   hi("@text.title",             { fg = ladybug_red, bold = true })
   hi("@text.literal",           { fg = stitch_green })
-  hi("@text.uri",               { fg = seine_blue, underline = true })
-  hi("@text.reference",         { fg = sky_blue })
+  hi("@text.uri",               { fg = petal_pink, underline = true })
+  hi("@text.reference",         { fg = sakura })
   hi("@comment",                { fg = comment, italic = true })
   hi("@punctuation",            { fg = blush })
   hi("@punctuation.delimiter",  { fg = blush })
@@ -233,11 +234,11 @@ function M.setup()
   hi("@number",                 { fg = lucky_charm })
   hi("@boolean",                { fg = tikki_red, bold = true })
   hi("@float",                  { fg = lucky_charm })
-  hi("@function",               { fg = seine_blue, bold = true })
-  hi("@function.builtin",       { fg = sky_blue, bold = true })
+  hi("@function",               { fg = petal_pink, bold = true })
+  hi("@function.builtin",       { fg = sakura, bold = true })
   hi("@function.macro",         { fg = hot_pink })
   hi("@parameter",              { fg = ribbon_purple })
-  hi("@method",                 { fg = seine_blue })
+  hi("@method",                 { fg = petal_pink })
 
   ---------------------------------------------------------------------------
   -- 14. More Treesitter (18 groups)
@@ -268,7 +269,7 @@ function M.setup()
   hi("@lsp.type.decorator",     { fg = lucky_charm })
   hi("@lsp.type.enum",          { fg = miraculous_gold })
   hi("@lsp.type.enumMember",    { fg = tikki_red })
-  hi("@lsp.type.function",      { fg = seine_blue, bold = true })
+  hi("@lsp.type.function",      { fg = petal_pink, bold = true })
   hi("@lsp.type.interface",     { fg = miraculous_gold, italic = true })
   hi("@lsp.type.macro",         { fg = hot_pink })
   hi("@lsp.type.namespace",     { fg = soft_lilac })
@@ -303,8 +304,8 @@ function M.setup()
   -- 19. Nvim-Tree (4 groups)
   ---------------------------------------------------------------------------
   hi("NvimTreeFolderIcon",   { fg = lucky_charm })
-  hi("NvimTreeFolderName",   { fg = seine_blue })
-  hi("NvimTreeOpenedFolderName", { fg = seine_blue, bold = true })
+  hi("NvimTreeFolderName",   { fg = petal_pink })
+  hi("NvimTreeOpenedFolderName", { fg = petal_pink, bold = true })
   hi("NvimTreeRootFolder",   { fg = ladybug_red, bold = true })
 
   ---------------------------------------------------------------------------

@@ -32,7 +32,7 @@ function M.setup()
   local info_blue     = "#6BB3D9"    -- sky over Paris
   local eiffel_grey   = "#9B8E96"    -- soft lavender grey
   local soft_lilac    = "#A855C7"    -- butterfly lilac
-  local stitch_green  = "#5DAE8B"    -- mint macaron
+  local stitch_green  = "#4AADA0"    -- macaron frost
   local ribbon_purple = "#9D5EC5"    -- ribbon on Marinette's gift box
   local fabric_dark   = "#2D1F30"    -- dark satin
 

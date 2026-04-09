@@ -2,44 +2,45 @@ local M = {}
 
 function M.setup()
   ---------------------------------------------------------------------------
-  -- Miraculous Light — Marinette's Daytime Palette
+  -- Miraculous Light — Marinette's Cute Palette
+  --   soft pinks, pastels & bubblegum charm
   ---------------------------------------------------------------------------
 
-  -- Foundations (light backgrounds, dark foregrounds)
-  local bg            = "#FAFAF8"
-  local bg_lighter    = "#F0EDE8"
-  local bg_float      = "#EDE8E0"
-  local fg            = "#2D2B28"
-  local fg_dim        = "#6B7280"
-  local comment       = "#8E99A4"
-  local selection      = "#E8D5DC"
-  local line          = "#F2EDE8"
-  local cream         = "#FFF1E6"
+  -- Foundations (rosy-tinted whites, warm & cozy like the bakery)
+  local bg            = "#FFF8F9"
+  local bg_lighter    = "#FFF0F3"
+  local bg_float      = "#FFEBEF"
+  local fg            = "#3D2B33"
+  local fg_dim        = "#8C7B85"
+  local comment       = "#B8A0AC"
+  local selection      = "#F5D5E0"
+  local line          = "#FFF3F5"
+  local cream         = "#FFF0E8"
 
-  -- Accents (darkened from dark-theme originals for light-bg readability)
-  local ladybug_red   = "#C62828"
-  local deep_red      = "#8E0000"
-  local rose          = "#C2185B"
-  local hot_pink      = "#AD1457"
-  local blush         = "#B0616A"
-  local light_pink    = "#9C4A5A"
-  local tikki_red     = "#D32F2F"
-  local miraculous_gold = "#B8860B"
-  local lucky_charm   = "#D48400"
-  local petal_pink    = "#D81B60"
-  local sakura        = "#E91E63"
-  local info_blue     = "#0277BD"
-  local eiffel_grey   = "#6B7280"
-  local soft_lilac    = "#7B1FA2"
-  local stitch_green  = "#2E7D32"
-  local ribbon_purple = "#6A1B9A"
-  local fabric_dark   = "#1A1A2E"
+  -- Accents (Marinette's sweet side — softer, dreamier, cuter)
+  local ladybug_red   = "#E84575"    -- her signature pink-red, softened
+  local deep_red      = "#C9365F"    -- darker but still rosy
+  local rose          = "#E8608A"    -- sweet rose
+  local hot_pink      = "#D94D8A"    -- vibrant but cute
+  local blush         = "#D88A9A"    -- cheek blush
+  local light_pink    = "#C97A8A"    -- soft macaroon pink
+  local tikki_red     = "#F06688"    -- tikki but make it kawaii
+  local miraculous_gold = "#D4956B"  -- warm croissant gold
+  local lucky_charm   = "#E0943A"    -- honey glaze
+  local petal_pink    = "#EC4899"    -- flower petal pink
+  local sakura        = "#F472B6"    -- cherry blossom
+  local info_blue     = "#6BB3D9"    -- sky over Paris
+  local eiffel_grey   = "#9B8E96"    -- soft lavender grey
+  local soft_lilac    = "#A855C7"    -- butterfly lilac
+  local stitch_green  = "#5DAE8B"    -- mint macaron
+  local ribbon_purple = "#9D5EC5"    -- ribbon on Marinette's gift box
+  local fabric_dark   = "#2D1F30"    -- dark satin
 
-  -- Diff backgrounds
-  local diff_add_bg    = "#E8F5E9"
-  local diff_change_bg = "#FFF8E1"
-  local diff_delete_bg = "#FFEBEE"
-  local diff_text_bg   = "#FFF3C4"
+  -- Diff backgrounds (pastel soft)
+  local diff_add_bg    = "#E8F8EF"
+  local diff_change_bg = "#FFF5E6"
+  local diff_delete_bg = "#FFE8EE"
+  local diff_text_bg   = "#FFF0D4"
 
   -- Diagnostic tones
   local error_fg   = ladybug_red
@@ -64,12 +65,12 @@ function M.setup()
   hi("CursorLine",      { bg = line })
   hi("CursorLineNr",    { fg = ladybug_red, bold = true })
   hi("CursorColumn",    { bg = line })
-  hi("LineNr",          { fg = "#C5BEB6" })
+  hi("LineNr",          { fg = "#D8C5CC" })
   hi("SignColumn",      { fg = eiffel_grey, bg = bg })
-  hi("FoldColumn",      { fg = "#C5BEB6", bg = bg })
+  hi("FoldColumn",      { fg = "#D8C5CC", bg = bg })
   hi("Folded",          { fg = comment, bg = bg_lighter })
-  hi("VertSplit",       { fg = "#D5CFC8", bg = bg })
-  hi("WinSeparator",    { fg = "#D5CFC8", bg = bg })
+  hi("VertSplit",       { fg = "#E8D0D8", bg = bg })
+  hi("WinSeparator",    { fg = "#E8D0D8", bg = bg })
   hi("StatusLine",      { fg = fg, bg = bg_lighter })
   hi("StatusLineNC",    { fg = fg_dim, bg = bg_lighter })
   hi("TabLine",         { fg = fg_dim, bg = bg_lighter })
@@ -83,19 +84,19 @@ function M.setup()
   hi("PmenuThumb",      { bg = eiffel_grey })
   hi("WildMenu",        { fg = bg, bg = ladybug_red })
   hi("ColorColumn",     { bg = cream })
-  hi("NonText",         { fg = "#D5CFC8" })
-  hi("SpecialKey",      { fg = "#D5CFC8" })
+  hi("NonText",         { fg = "#E8D0D8" })
+  hi("SpecialKey",      { fg = "#E8D0D8" })
 
   ---------------------------------------------------------------------------
   -- 2. Search & Visual (8 groups)
   ---------------------------------------------------------------------------
   hi("Visual",          { bg = selection })
   hi("VisualNOS",       { bg = selection })
-  hi("Search",          { fg = fabric_dark, bg = "#FFDCA8" })
+  hi("Search",          { fg = fabric_dark, bg = "#FFD6E0" })
   hi("IncSearch",       { fg = bg, bg = lucky_charm })
   hi("CurSearch",       { fg = bg, bg = ladybug_red })
   hi("Substitute",      { fg = bg, bg = rose })
-  hi("MatchParen",      { fg = ladybug_red, bg = "#F8D0D0", bold = true })
+  hi("MatchParen",      { fg = ladybug_red, bg = "#FFDCE8", bold = true })
   hi("QuickFixLine",    { bg = selection, bold = true })
 
   ---------------------------------------------------------------------------
@@ -141,10 +142,10 @@ function M.setup()
   ---------------------------------------------------------------------------
   -- 7. Diagnostic Virtual Text (4 groups)
   ---------------------------------------------------------------------------
-  hi("DiagnosticVirtualTextError", { fg = error_fg, bg = "#FDE8E8" })
-  hi("DiagnosticVirtualTextWarn",  { fg = warn_fg, bg = "#FFF4E0" })
-  hi("DiagnosticVirtualTextInfo",  { fg = info_fg, bg = "#E3F2FD" })
-  hi("DiagnosticVirtualTextHint",  { fg = hint_fg, bg = "#E8F5E9" })
+  hi("DiagnosticVirtualTextError", { fg = error_fg, bg = "#FFE8EE" })
+  hi("DiagnosticVirtualTextWarn",  { fg = warn_fg, bg = "#FFF4E5" })
+  hi("DiagnosticVirtualTextInfo",  { fg = info_fg, bg = "#E8F2FC" })
+  hi("DiagnosticVirtualTextHint",  { fg = hint_fg, bg = "#E8F8EF" })
 
   ---------------------------------------------------------------------------
   -- 8. Diagnostic Signs (4 groups)
@@ -277,7 +278,7 @@ function M.setup()
   ---------------------------------------------------------------------------
   -- 15b. LSP Inlay Hints
   ---------------------------------------------------------------------------
-  hi("LspInlayHint",            { fg = "#9E8E96", bg = "#F2EDE8", italic = true })
+  hi("LspInlayHint",            { fg = "#C0A0B0", bg = "#FFF3F5", italic = true })
 
   ---------------------------------------------------------------------------
   -- 16. Git Signs / Gutter (6 groups)
@@ -302,7 +303,7 @@ function M.setup()
   ---------------------------------------------------------------------------
   -- 18. Indent Blank Line (2 groups)
   ---------------------------------------------------------------------------
-  hi("IndentBlanklineChar",         { fg = "#E0DCD6", nocombine = true })
+  hi("IndentBlanklineChar",         { fg = "#F0D8E0", nocombine = true })
   hi("IndentBlanklineContextChar",  { fg = ladybug_red, nocombine = true })
 
   ---------------------------------------------------------------------------
